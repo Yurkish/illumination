@@ -13,6 +13,26 @@ def plot_temperatures(time, temperatures):
     plt.ylabel('tempearture(C)')
     plt.title('Temperature Curve')
     plt.show()
+
+def plot_array(index, array_to_plot):
+    plt.plot(index, array_to_plot)
+    plt.xlabel('index')
+    plt.ylabel('values')
+    plt.title('Simple Array Plot Curve')
+    plt.show()
+def plot_array_10(index, array_to_plot):
+    plt.plot(index, array_to_plot)
+    plt.xlabel('index')
+    plt.ylabel('values')
+    plt.ylim(10,-10)
+    plt.title('Simple Array Plot Curve')
+    plt.show()
+def plot_array_minutes(index, array_to_plot):
+    plt.plot(index, array_to_plot)
+    plt.xlabel('minutes')
+    plt.ylabel('values')
+    plt.title('Simple Array Plot Curve')
+    plt.show()
     
 def plot_compare(time1, value1, time2, value2, y_label):
     plt.plot(time1, value1)
@@ -23,7 +43,7 @@ def plot_compare(time1, value1, time2, value2, y_label):
     plt.show()
 
 def plot_compare_scaled (time1, data1, y_label1, time2, data2, y_label2):
-    fig, ax1 = plt.subplots(dpi=300)
+    fig, ax1 = plt.subplots(dpi=100)
     color = 'tab:red'
     ax1.set_xlabel('time (s)')
     ax1.set_ylabel(y_label1, color=color)
